@@ -1,7 +1,7 @@
 *PRAKTIKUM 3*
-NAMA : ERIK MAULANA
-NIM : 31210188
-KELAS : TI21C1
+<p1>NAMA : ERIK MAULANA
+<p1>NIM : 31210188
+<p1>KELAS : TI21C1
 
 #PEGAWAI.JAVA SEBAGAI SUPER CLASS
 ![pegawai java - praktikum3 - Visual Studio Code  Administrator  11_5_2022 6_14_06 AM](https://user-images.githubusercontent.com/92783916/200089241-87504a2f-014f-4f99-8f29-b84e34aef656.png)
