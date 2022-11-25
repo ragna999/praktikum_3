@@ -1,25 +1,26 @@
 public class programer extends pegawai {
-    private Object Tunjangan = null;
+    public programer(String nama, double gajipokok) {
+        super(nama, gajipokok);
+        //TODO Auto-generated constructor stub
+    }
+
     double bonus;
 
-    public void setbonus(double bonus){
-        this.bonus = bonus; 
+    /**
+     * @param nama
+     * @param Gajipokok
+     * @param bonus
+     */
+    public programer(String nama, double Gajipokok, double bonus){
+        super(nama, Gajipokok);
+        this.bonus=bonus;
+
     }
 
-    public double getbonus(){
-        return this.bonus;
-    }
-    public void cetakinfo (){
-        super.cetakinfo();
-    }
-
-    public void cetakTunjangan(){
-        Tunjangan = 3500000;
-        System.out.println("Tunjangan : Rp. " + this.Tunjangan);
-    }
-    
-    public void cetakbonus(){
-        bonus = 4000000.00;
-        System.out.println("bonus : Rp." + this.bonus);
+    public void cetakInfo(){
+        System.out.println("Programmer");
+        super.cetakInfo();
+        System.out.println("Bonus        :  "+ this.bonus);
+        System.out.println("======================================");
     }
 }
