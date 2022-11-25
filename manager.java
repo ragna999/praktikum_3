@@ -1,25 +1,21 @@
 public class manager extends pegawai {
-    private Object bonus = null;
-    double Tunjangan;
+    double tunjangan;
 
-    public void setTunjangan(double Tunjangan){
-        this.Tunjangan = Tunjangan;
-    }
-
-    public double getTunjangan(){
-        return this.Tunjangan;
-    }
-    
-    public void cetakinfo(){
-        super.cetakinfo();
+    /**
+     * @param nama
+     * @param gajipokok
+     * @param tunjangan
+     */
+    public manager(String nama, double gajipokok, double tunjangan){
+        super(nama, gajipokok);
+        this.tunjangan = tunjangan;
     }
 
-    public void cetakTunjangan(){
-        Tunjangan = 4000000;
-        System.out.println("Tunjangan : Rp. " + this.Tunjangan);
-    }
-    public void cetakbonus(){
-        bonus = 7000000;
-        System.out.println("bonus : Rp." + this.bonus);
+    public void cetakInfo(){
+        System.out.println("=======================================");
+        System.out.println("Manager");
+        super.cetakInfo();
+        System.out.println("Tunjangan    : " + this.tunjangan);
+        System.out.println("=======================================");
     }
 }
