@@ -1,26 +1,16 @@
-public class programer extends pegawai {
-    public programer(String nama, double gajipokok) {
-        super(nama, gajipokok);
-        //TODO Auto-generated constructor stub
-    }
+public class pegawai {
+    String nama;
+    double Gajipokok;
 
-    double bonus;
 
-    /**
-     * @param nama
-     * @param Gajipokok
-     * @param bonus
-     */
-    public programer(String nama, double Gajipokok, double bonus){
-        super(nama, Gajipokok);
-        this.bonus=bonus;
-
+    public pegawai(String nama, double gajipokok){
+        this.nama = nama;
+        this.Gajipokok = gajipokok;
     }
 
     public void cetakInfo(){
-        System.out.println("Programmer");
-        super.cetakInfo();
-        System.out.println("Bonus        :  "+ this.bonus);
-        System.out.println("======================================");
+        System.out.println("=======================================");
+        System.out.println("Nama         : " + this.nama);
+        System.out.println("Gaji POkok   : " + this.Gajipokok);
     }
 }
